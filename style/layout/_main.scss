@@ -1,0 +1,29 @@
+body {
+    $color-list: $c1, $c2, $c3, $c4, $c5, $c6, $c7, $c8, $c9, $c10, $c11, $c12, $c13, $c14, $c15, $c16, $c17, $c18,
+    $brightGreen, $brightGreen2, $brightYellow, $yellow, $yellowOrange, $orange, $orangeRed, $red, $redOrange, $red2, $red3, $red4, $red7, $red8, $red9, $red12, $red13, $red14, $red15, $red16,
+    $darkBlue, $navyBlue, $deepPurple, $purple, $teal, $cyan, $darkOrange, $brightOrange2, $brightOrange, $Amber, $vibrantPinkRed, $intenseRed, $royalPurple, $deepPurple2, $emeralGreen, $forestGrenn, $indigoBlue, $darkBlue2, $limeGreen, $green, $goldenYellow, $gold;
+ 
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            @for $i from 1 through length($color-list) {
+                &.item#{$i} {
+                    background-color: nth($color-list, $i);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body h1 {
+  font-size: 1.875rem;
+  line-height: 1.4;
+}
+body h2 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+body h3 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+body h4 {
+  font-size: 1.375rem;
+  line-height: 1.7;
+}
+body h5 {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+body h6 {
+  font-size: 1.125rem;
+  line-height: 1.9;
+}
+body p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* tablets, small laptops, laptops and desktops... */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.6;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.8;
+  }
+  h5 {
+    font-size: 1.125rem;
+    line-height: 1.9;
+  }
+  h6 {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+}
+body .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
+body .container .item.item1 {
+  background-color: rgba(16, 18, 27, 0.4);
+}
+body .container .item.item2 {
+  background-color: rgba(12, 15, 25, 0.3);
+}
+body .container .item.item3 {
+  background-color: #21242d;
+}
+body .container .item.item4 {
+  background-color: rgb(42, 46, 60);
+}
+body .container .item.item5 {
+  background-color: rgb(22, 25, 37);
+}
+body .container .item.item6 {
+  background-color: #14162b;
+}
+body .container .item.item7 {
+  background-color: rgba(36, 39, 59, 0.3);
+}
+body .container .item.item8 {
+  background-color: rgba(1, 2, 3, 0.4);
+}
+body .container .item.item9 {
+  background-color: #ff5733;
+}
+body .container .item.item10 {
+  background-color: #34e7e4;
+}
+body .container .item.item11 {
+  background-color: #ff33fc;
+}
+body .container .item.item12 {
+  background-color: #33ff57;
+}
+body .container .item.item13 {
+  background-color: #e734e7;
+}
+body .container .item.item14 {
+  background-color: #33fcff;
+}
+body .container .item.item15 {
+  background-color: #5733ff;
+}
+body .container .item.item16 {
+  background-color: #e7e734;
+}
+body .container .item.item17 {
+  background-color: #57ff33;
+}
+body .container .item.item18 {
+  background-color: #34e7e7;
+}
+body .container .item.item19 {
+  background-color: #99FF33;
+}
+body .container .item.item20 {
+  background-color: #99FF00;
+}
+body .container .item.item21 {
+  background-color: #FFFF00;
+}
+body .container .item.item22 {
+  background-color: #FFFF33;
+}
+body .container .item.item23 {
+  background-color: #FFCC33;
+}
+body .container .item.item24 {
+  background-color: #FF9900;
+}
+body .container .item.item25 {
+  background-color: #CC3300;
+}
+body .container .item.item26 {
+  background-color: #FF0000;
+}
+body .container .item.item27 {
+  background-color: #FF3300;
+}
+body .container .item.item28 {
+  background-color: #FF3366;
+}
+body .container .item.item29 {
+  background-color: #FF3399;
+}
+body .container .item.item30 {
+  background-color: #FF33CC;
+}
+body .container .item.item31 {
+  background-color: #FF9900;
+}
+body .container .item.item32 {
+  background-color: #FFCC00;
+}
+body .container .item.item33 {
+  background-color: #FFFF00;
+}
+body .container .item.item34 {
+  background-color: #FFFF99;
+}
+body .container .item.item35 {
+  background-color: #FFFFCC;
+}
+body .container .item.item36 {
+  background-color: #FFFFFF;
+}
+body .container .item.item37 {
+  background-color: #FFCCFF;
+}
+body .container .item.item38 {
+  background-color: #CCFFFF;
+}
+body .container .item.item39 {
+  background-color: #336699;
+}
+body .container .item.item40 {
+  background-color: #003366;
+}
+body .container .item.item41 {
+  background-color: #990066;
+}
+body .container .item.item42 {
+  background-color: #800080;
+}
+body .container .item.item43 {
+  background-color: #006666;
+}
+body .container .item.item44 {
+  background-color: #009999;
+}
+body .container .item.item45 {
+  background-color: #CC3300;
+}
+body .container .item.item46 {
+  background-color: #FF6600;
+}
+body .container .item.item47 {
+  background-color: #FF9933;
+}
+body .container .item.item48 {
+  background-color: #FF9900;
+}
+body .container .item.item49 {
+  background-color: #FF3366;
+}
+body .container .item.item50 {
+  background-color: #FF0044;
+}
+body .container .item.item51 {
+  background-color: #660066;
+}
+body .container .item.item52 {
+  background-color: #990099;
+}
+body .container .item.item53 {
+  background-color: #339966;
+}
+body .container .item.item54 {
+  background-color: #006633;
+}
+body .container .item.item55 {
+  background-color: #333399;
+}
+body .container .item.item56 {
+  background-color: #000099;
+}
+body .container .item.item57 {
+  background-color: #669900;
+}
+body .container .item.item58 {
+  background-color: #008000;
+}
+body .container .item.item59 {
+  background-color: #FFCC00;
+}
+body .container .item.item60 {
+  background-color: #FFD700;
+}/*# sourceMappingURL=main.css.map */
